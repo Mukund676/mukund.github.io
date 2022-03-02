@@ -30,7 +30,7 @@ document.addEventListener('keyup', (e) => {
     }
 
     let pressedKey = String(e.key)
-    if (pressedKey === "Backspsace" && nextLetter !== 0) {
+    if (pressedKey === "Backspace" && nextLetter !== 0) {
         deleteLetter()
         return
     }
