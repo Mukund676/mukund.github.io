@@ -17,7 +17,9 @@ function initBoard() {
             box.className = 'letter-box'
             row.appendChild(box)
         }
+        board.appendChild(row)
     }
 }
 
 initBoard()
+
