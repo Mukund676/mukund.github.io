@@ -70,8 +70,6 @@ function checkGuess () {
         toastr.error("Word not in list!")
         return
     }
-
-    
     for (let i = 0; i < 5; i++) {
         let letterColor = ''
         let box = row.children[i]
@@ -84,11 +82,12 @@ function checkGuess () {
         } else { 
             if (currentGuess[i] === rightGuess[i]) {
                 letterColor = 'green'
+                rightGuess[letterPosition] = "#"
             } else {
                 letterColor = 'yellow'
             }
 
-            rightGuess[letterPosition] = "#"
+            
         }
 
         let delay = 250 * i
