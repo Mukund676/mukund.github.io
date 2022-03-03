@@ -81,9 +81,8 @@ function checkGuess () {
             letterColor = 'grey'
         } else { 
             if (currentGuess[i] === rightGuess[i]) {
-                letterColor = 'green'
-                rightGuess[letterPosition] = "#"
                 letterColor = 'lightGreen'
+                rightGuess[letterPosition] = "#"
             } else {
                 letterColor = 'yellow'
             }
