@@ -1,10 +1,10 @@
-import { fiveletters } from "./wordscomplete.js";
+import { sixletters } from "./wordscomplete.js";
 
-const NUMBER_OF_GUESSES = 6;
+const NUMBER_OF_GUESSES = 7;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = fiveletters[Math.floor(Math.random() * fiveletters.length)]
+let rightGuessString = sixletters[Math.floor(Math.random() * sixletters.length)]
 
 console.log(rightGuessString)
 
@@ -15,7 +15,7 @@ function initBoard() {
         let row = document.createElement("div")
         row.className = "letter-row"
         
-        for (let j = 0; j < 5; j++) {
+        for (let j = 0; j < 6; j++) {
             let box = document.createElement("div")
             box.className = "letter-box"
             row.appendChild(box)
@@ -66,7 +66,7 @@ function checkGuess () {
         return
     }
 
-    if (!fiveletters.includes(guessString)) {
+    if (!sixletters.includes(guessString)) {
         toastr.error("Word not in list!")
         return
     }
