@@ -61,7 +61,7 @@ function checkGuess () {
         guessString += val
     }
 
-    if (guessString.length != 5) {
+    if (guessString.length != 6) {
         toastr.error("Not enough letters!")
         return
     }
