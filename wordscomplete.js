@@ -274939,7 +274939,7 @@ for (let i = 0; i<allWords.length; i++) {
 export let sixletters = []
 
 for (let i = 0; i<allWords.length; i++) {
-    if (allWords[i].length==5) {
+    if (allWords[i].length==6) {
         sixletters.push(allWords[i])
         
     }
