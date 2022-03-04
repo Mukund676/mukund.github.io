@@ -44,7 +44,7 @@ function shadeKeyBoard(letter, color) {
 }
 
 function deleteLetter () {
-    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining]
     let box = row.children[nextLetter - 1]
     box.textContent = ""
     box.classList.remove("filled-box")
@@ -70,7 +70,7 @@ function checkGuess () {
         toastr.error("Word not in list!")
         return
     }
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 6; i++) {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
@@ -115,12 +115,12 @@ function checkGuess () {
 }
 
 function insertLetter (pressedKey) {
-    if (nextLetter === 5) {
+    if (nextLetter === 6) {
         return
     }
     pressedKey = pressedKey.toLowerCase()
 
-    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining]
     let box = row.children[nextLetter]
     animateCSS(box, "pulse")
     box.textContent = pressedKey
@@ -165,6 +165,7 @@ document.addEventListener("keyup", (e) => {
 
     let found = pressedKey.match(/[a-z]/gi)
     if (!found || found.length > 1) {
+        console.log('ay')
         return
     } else {
         insertLetter(pressedKey)
