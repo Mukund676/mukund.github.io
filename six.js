@@ -53,7 +53,7 @@ function deleteLetter () {
 }
 
 function checkGuess () {
-    let row = document.getElementsByClassName("letter-row")[6 - guessesRemaining]
+    let row = document.getElementsByClassName("letter-row")[7 - guessesRemaining]
     let guessString = ''
     let rightGuess = Array.from(rightGuessString)
 
