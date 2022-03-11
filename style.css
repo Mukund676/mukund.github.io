@@ -1,3 +1,6 @@
+body {
+  background-color: lightblue;
+}
 h1 {
     text-align: center;
 }
@@ -52,4 +55,24 @@ h1 {
     margin: 0 2px;
     cursor: pointer;
     text-transform: uppercase;
+  }
+
+  .links {
+    margin: auto;
+    width: auto;
+    font-size: 1em;
+    color: #ffffff;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    min-height: 45px;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #b5b5b5;
+    background-color: #616161;
+    margin: 2px;
+  }
+
+  a {
+    color:white;
   }
